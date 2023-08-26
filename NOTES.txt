@@ -1,0 +1,20 @@
+Project Setup Instructions
+Prerequisites
+- Ruby version 3.1.2
+- Rails version 7.0.7
+- NPM version 9.5.1
+- Node version 18.16.0
+Make sure to install the versions listed above before proceeding.
+
+Backend Setup
+ - Navigate to the backend folder and execute bundle install.
+ - Update the database.yml file in the backend folder with your PostgreSQL username and password.
+ Run the following commands to set up the database:
+ - rails db:create
+ - rails db:migrate
+ - rails db:seed (This will populate the database with data from a file.)
+ Start the backend server by running rails s. The backend will be accessible on port 3000.
+Frontend Setup
+ - Move to the frontend folder and execute npm install.
+ - Start the frontend application by running npm start -- --port 3001.
+The frontend will now run on port 3001, as specified. Once it's up, you can view post like statistics and have the ability to like or dislike posts by selecting a user.
