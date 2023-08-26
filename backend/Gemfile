@@ -50,6 +50,7 @@ gem "bootsnap", require: false
 
 gem 'groupdate'
 gem 'rack-cors'
+gem 'active_model_serializers'
 
 
 group :development, :test do

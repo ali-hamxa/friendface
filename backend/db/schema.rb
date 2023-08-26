@@ -22,6 +22,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_021027) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["likeable_type", "likeable_id"], name: "index_likes_on_likeable"
+    t.index ["user_id", "likeable_type", "likeable_id"], name: "index_likes_on_user_id_and_likeable_type_and_likeable_id", unique: true
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
